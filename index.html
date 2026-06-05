@@ -8,6 +8,13 @@
       content="Dhruv Kale portfolio: AI, automation, data reporting, and software engineering projects for recruiter review."
     />
     <title>Dhruv Kale | AI & Software Engineer</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PNPXZGEZJQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+      gtag("config", "G-PNPXZGEZJQ");
+    </script>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -21,7 +28,13 @@
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a class="header-action" href="./assets/Dhruv_Kale_CV.pdf" download>Resume</a>
+      <a
+        class="header-action"
+        href="./assets/Dhruv_Kale_CV.pdf"
+        download
+        data-track="resume_download"
+        data-track-label="header_resume"
+      >Resume</a>
     </header>
 
     <main id="top">
@@ -34,9 +47,28 @@
             3 years of experience across automation, observability, reporting, and applied AI.
           </p>
           <div class="hero-actions" aria-label="Contact and portfolio actions">
-            <a class="button primary" href="mailto:dhruvk0074@gmail.com">Email Dhruv</a>
-            <a class="button secondary" href="https://www.linkedin.com/in/dhruv-kale99" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a class="button ghost" href="https://github.com/dhruvkale17" target="_blank" rel="noreferrer">GitHub</a>
+            <a
+              class="button primary"
+              href="mailto:dhruvk0074@gmail.com"
+              data-track="email_click"
+              data-track-label="hero_email"
+            >Email Dhruv</a>
+            <a
+              class="button secondary"
+              href="https://www.linkedin.com/in/dhruv-kale99"
+              target="_blank"
+              rel="noreferrer"
+              data-track="linkedin_click"
+              data-track-label="hero_linkedin"
+            >LinkedIn</a>
+            <a
+              class="button ghost"
+              href="https://github.com/dhruvkale17"
+              target="_blank"
+              rel="noreferrer"
+              data-track="github_click"
+              data-track-label="hero_github"
+            >GitHub</a>
           </div>
           <div class="availability">
             <span class="status-dot" aria-hidden="true"></span>
@@ -158,7 +190,13 @@
               Built an n8n workflow that ingests unstructured emails, filters application updates,
               and uses an LLM to classify statuses such as interview, offer, and rejection.
             </p>
-            <a href="https://github.com/dhruvkale17/Automated-Job-Application-Tracking-n8n-AI" target="_blank" rel="noreferrer">View repository</a>
+            <a
+              href="https://github.com/dhruvkale17/Automated-Job-Application-Tracking-n8n-AI"
+              target="_blank"
+              rel="noreferrer"
+              data-track="project_click"
+              data-track-label="job_application_tracking_repo"
+            >View repository</a>
           </article>
 
           <article class="project-card">
@@ -171,7 +209,13 @@
               Fine-tuned Qwen2.5-1.5B for German-to-French translation using QLoRA, with emphasis on
               data cleaning, prompt design, and synthetic data generation.
             </p>
-            <a href="https://github.com/dhruvkale17/Fine-tuning-LLM-for-language-translation" target="_blank" rel="noreferrer">View repository</a>
+            <a
+              href="https://github.com/dhruvkale17/Fine-tuning-LLM-for-language-translation"
+              target="_blank"
+              rel="noreferrer"
+              data-track="project_click"
+              data-track-label="llm_translation_repo"
+            >View repository</a>
           </article>
 
           <article class="project-card">
@@ -242,8 +286,19 @@
           </p>
         </div>
         <div class="contact-actions">
-          <a class="button primary" href="mailto:dhruvk0074@gmail.com">dhruvk0074@gmail.com</a>
-          <a class="button secondary" href="./assets/Dhruv_Kale_CV.pdf" download>Download CV</a>
+          <a
+            class="button primary"
+            href="mailto:dhruvk0074@gmail.com"
+            data-track="email_click"
+            data-track-label="contact_email"
+          >dhruvk0074@gmail.com</a>
+          <a
+            class="button secondary"
+            href="./assets/Dhruv_Kale_CV.pdf"
+            download
+            data-track="resume_download"
+            data-track-label="contact_resume"
+          >Download CV</a>
         </div>
       </section>
     </main>
