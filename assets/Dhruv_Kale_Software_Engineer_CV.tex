@@ -1,0 +1,109 @@
+\documentclass{resume}
+
+% ============================ FONT ============================
+% Active font: Helvetica / Arial-style sans-serif. Clean, readable, ATS-safe.
+% Works everywhere (including this and any TeX install).
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+%
+% ---- To change the font: comment the THREE lines above, then uncomment
+% ---- exactly ONE block below. (Lato and Carlito are available on Overleaf.)
+%
+% Lato (modern sans, very popular on resumes):
+%   \usepackage[T1]{fontenc}
+%   \usepackage[default]{lato}
+%
+% Carlito (metric-compatible with Calibri, the classic Word resume font):
+%   \usepackage[T1]{fontenc}
+%   \usepackage{carlito}
+%   \renewcommand{\familydefault}{\sfdefault}
+%
+% Charter (modern, readable serif):
+%   \usepackage[T1]{fontenc}
+%   \usepackage{charter}
+%
+% Palatino (elegant, readable serif):
+%   \usepackage[T1]{fontenc}
+%   \usepackage{mathpazo}
+% =============================================================
+
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\renewcommand{\sectionskip}{\medskip}
+\renewcommand{\sectionlineskip}{\smallskip}
+\name{Dhruv Kale}
+\address{+49 155 6074 4298 \\ Kaiserslautern, Germany}
+\address{dhruvkofficial@gmail.com \\ \href{https://www.linkedin.com/in/dhruv-kale99/}{linkedin} \\ \href{https://github.com/dhruvkale17}{github}}
+\begin{document}
+
+\begin{rSection}{PROFILE}
+{Master's student in Computer Science at RPTU Kaiserslautern (graduating September 2027), with 3 years of professional experience in automation, data reporting, and application performance monitoring at Capgemini, and currently building operations leadership experience as a working student in Germany. Actively building agentic AI systems, LLM automation pipelines, and Android applications. Seeking a working student or internship role in AI/ML or software engineering.}
+\end{rSection}
+
+\begin{rSection}{Education}
+{\bf Master of Science in Computer Science }, RPTU Kaiserslautern \hfill {Oct 2024 - Present}\\
+{\bf Bachelor of Engineering in Computer Engineering}, University of Pune (Grade: 1.9, German-scale equivalent) \hfill {2017 - 2021}
+\end{rSection}
+
+\begin{rSection}{SKILLS}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming Languages & Python, SQL, Java \\
+AI \& ML & LangGraph, MCP, PyTorch, scikit-learn, QLoRA \\
+Automation \& Tools & n8n, Ansible, Docker, Power BI (DAX), AppDynamics, Git, Jira \\
+Frameworks & Flask, Django \\
+Mobile \& XR & Android (Java, ARCore, OpenGL ES)\\
+Languages Spoken & English (C2 - fluent) $\cdot$ German (B1 - actively developing) \\
+\end{tabular}
+\end{rSection}
+
+\begin{rSection}{EXPERIENCE}
+\textbf{Deputy Shift Lead (Operations, Working Student)} \hfill March 2025 - Present\\
+Flink \hfill \textit{Kaiserslautern, Germany}
+ \begin{itemize}
+    \itemsep -1pt {}
+     \item Oversee and maintain internal hub operations, inventory, and stock management, coordinating a rider and ops team of up to 10 across shifts as long as 8 hours, with a structured handover at the end of every shift.
+     \item Manage KPI tracking and pre- and post-order feedback, resolving rider issues in real time to keep operations running smoothly at an average daily order volume nearing 280.
+ \end{itemize}
+\textbf{Senior Analyst (Power BI Developer)} \hfill April 2023 - Sept 2024\\
+Capgemini \hfill \textit{Pune, India}
+ \begin{itemize}
+    \itemsep -1pt {}
+     \item Awarded the \textbf{Customer Delight Award} for pitching and leading the transition from manual reporting to automated \textbf{Power BI} reports for weekly reporting, reducing manual data compilation effort by 4 hours per week.
+     \item Integrated data sources and developed Power BI reports using \textbf{DAX} to deliver actionable insights and improve business decision-making.
+     \item Leveraged LLMs to optimise Power BI queries for performance.
+     \item Managed Power BI workspace access, report ownership, and refreshes while training team members on report maintenance and future enhancements.
+ \end{itemize}
+\newpage
+\textbf{Analyst / Software Engineer (Performance Management in Automation)} \hfill {Sept 2021 - March 2023}\\
+Capgemini \hfill \textit{Pune, India}
+ \begin{itemize}
+    \itemsep -1pt {}
+     \item Created dashboards in \textbf{AppDynamics} for application health, business transaction performance metrics, and infrastructure metrics across multiple applications, enabling monitoring for L2/L3 teams.
+     \item Added health rules and created policies for multiple applications in the AppDynamics controller, integrating them with Opsgenie alerts to enhance on-call support.
+     \item Developed Python scripts to automate generation of health status dashboards, saving 2 hours of manual configuration per cycle, and enabled automated AppDynamics .NET agent deployments using Python and \textbf{Ansible}.
+     \item Provided training sessions to support teams to enable them to leverage AppDynamics for monitoring and troubleshooting.
+ \end{itemize}
+\end{rSection}
+
+\begin{rSection}{PROJECTS}
+\begin{itemize}
+    \itemsep -1pt {}
+    \item \textbf{Adaptive LLM-Powered Browser Automation Agent} \textit{(Ongoing, 05/2026 - Present):} Engineering an adaptive LLM-powered browser agent using Python and Playwright to automate workflows across a leave management system, MS Calendar, and MS Teams.
+    \item[] Implemented secure authentication and dynamic page-interaction logic that adapts to changing page structures across the target applications, along with failure-recovery handling so the agent can detect broken automation steps and retry or fall back gracefully.
+    \item \textbf{MyDietTracker -- AI-First Nutrition Tracking App} \textit{(Ongoing, 07/2026 - Present):} Building an AI-First meal and nutrition tracker in Java. Features barcode and nutritional label scanning for tracking and building AI powered dynamic planning based on user activity and goals.
+    \item[] Implemented on-device nutrition-label OCR (ML Kit) and barcode scanning (OpenFoodFacts API), a TDEE/calorie calculator (Mifflin-St Jeor / Katch-McArdle) with weight/macro tracking, recipe builder, and trend charts. \href{https://github.com/dhruvkale17/MyDietTracker}{GitHub}
+    \item \textbf{Automated Job Application Tracking Pipeline (n8n \& AI):} Developed an automated n8n workflow that ingests unstructured emails, filters them, and uses an LLM to accurately extract job application status metrics (e.g. Interview, Offer, Rejection).
+    \item[] Deployed an isolated global error-handling framework via an Error Trigger node, programming a Discord operations bot with JavaScript expressions to stream real-time formatted diagnostic reports. \href{https://github.com/dhruvkale17/Automated-Job-Application-Tracking-n8n-AI}{GitHub}
+    \item \textbf{LLM Fine-Tuning for Language Translation:} Fine-tuned the Qwen2.5-1.5B model for German-to-French translation using QLoRA, resulting in an 84\% increase in BLEU Score.
+    \item[] Focused on data cleaning, prompt engineering, and synthetic data generation for training to ensure high-quality model output. \href{https://github.com/dhruvkale17/Fine-tuning-LLM-for-language-translation}{GitHub}
+\end{itemize}
+\end{rSection}
+
+\begin{rSection}{Hobbies and Interests}
+Bouldering\ $\cdot$ \ Dance \ $\cdot$ \ Fitness $\cdot$ \ Arm Wrestling
+\end{rSection}
+
+\end{document}
