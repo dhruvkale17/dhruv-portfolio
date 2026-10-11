@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Dhruv Kale portfolio: AI, automation, data reporting, and software engineering projects for recruiter review."
+      content="Dhruv Kale: software engineer with three years at Capgemini, now an M.Sc. Computer Science student at RPTU Kaiserslautern building LLM agents."
     />
-    <title>Dhruv Kale | AI & Software Engineer</title>
+    <title>Dhruv Kale | Software Engineer</title>
+    <script>
+      document.documentElement.classList.add("js");
+      try {
+        const saved = localStorage.getItem("theme");
+        if (saved) document.documentElement.dataset.theme = saved;
+      } catch (e) {}
+    </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PNPXZGEZJQ"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -15,358 +22,555 @@
       gtag("js", new Date());
       gtag("config", "G-PNPXZGEZJQ");
     </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Dhruv Kale home">
-        <span>DK</span>
-      </a>
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#work">Work</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <a
-        class="header-action"
-        href="./assets/Dhruv_Kale_Software_Engineer_CV.pdf"
-        download
-        data-track="resume_download"
-        data-track-label="header_resume"
-      >Resume</a>
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Dhruv Kale, back to top">
+          <span class="brand-mark">dk</span>
+          <span class="brand-name">Dhruv Kale</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#research">Research</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="header-tools">
+          <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" /></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" /></svg>
+          </button>
+          <a
+            class="header-action"
+            href="./assets/Dhruv_Kale_Software_Engineer_CV.pdf"
+            download
+            data-track="resume_download"
+            data-track-label="header_resume"
+          >Resume</a>
+        </div>
+      </div>
     </header>
 
     <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
+      <!-- Hero -->
+      <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Kaiserslautern, Germany | Work permit: Germany</p>
-          <h1 id="hero-title">Dhruv Kale builds AI-powered workflows that turn operational noise into reliable systems.</h1>
-          <p class="hero-summary">
-            Master's student in Computer Science at RPTU and former Capgemini software engineer with
-            3 years of experience across automation, observability, reporting, and applied AI, currently
-            building operations leadership experience as a working student in Germany.
+          <p class="status-pill"><span class="dot" aria-hidden="true"></span>Open to working student, internship &amp; full-time roles</p>
+          <h1>
+            Hi, I'm Dhruv.<br />
+            <span class="h1-soft">Software engineer.</span>
+          </h1>
+          <p class="hero-skills">
+            <span>Backend</span><span>AI systems</span><span>Data analysis</span><span>Performance engineering</span>
           </p>
-          <div class="hero-actions" aria-label="Contact and portfolio actions">
+          <p class="hero-lede">
+            Three years shipping automation and reporting at <strong>Capgemini</strong>. Now an M.Sc.
+            Computer Science student at <strong>RPTU Kaiserslautern</strong> building LLM agents.
+          </p>
+          <div class="hero-actions">
             <a
-              class="button primary"
-              href="mailto:dhruvkofficial@gmail.com"
+              class="btn btn-primary"
+              href="mailto:dhruvk0074@gmail.com"
               data-track="email_click"
               data-track-label="hero_email"
-            >Email Dhruv</a>
+            >Get in touch
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
             <a
-              class="button secondary"
-              href="https://www.linkedin.com/in/dhruv-kale99"
+              class="btn btn-ghost"
+              href="./assets/Dhruv_Kale_Software_Engineer_CV.pdf"
+              download
+              data-track="resume_download"
+              data-track-label="hero_resume"
+            >Download resume</a>
+          </div>
+          <div class="hero-social">
+            <a
+              href="https://www.linkedin.com/in/dhruv-kale99/"
               target="_blank"
               rel="noreferrer"
               data-track="linkedin_click"
               data-track-label="hero_linkedin"
-            >LinkedIn</a>
+            >LinkedIn ↗</a>
             <a
-              class="button ghost"
               href="https://github.com/dhruvkale17"
               target="_blank"
               rel="noreferrer"
               data-track="github_click"
               data-track-label="hero_github"
-            >GitHub</a>
-          </div>
-          <div class="availability">
-            <span class="status-dot" aria-hidden="true"></span>
-            Open to AI engineering, data automation, backend, and student working roles.
+            >GitHub ↗</a>
           </div>
         </div>
 
-        <div class="hero-visual" aria-label="Portrait of Dhruv Kale">
-          <img src="./assets/dhruv-kale-headshot.png" alt="Dhruv Kale professional portrait" />
-          <div class="proof-strip" aria-label="Professional highlights">
-            <div>
-              <strong>3+ yrs</strong>
-              <span>engineering delivery</span>
-            </div>
-            <div>
-              <strong>84%</strong>
-              <span>LLM translation gain</span>
-            </div>
-            <div>
-              <strong>4 hrs/wk</strong>
-              <span>reporting time saved</span>
-            </div>
+        <div class="hero-visual">
+          <div class="photo-frame">
+            <img src="./assets/dhruv-kale-headshot.png" alt="Portrait of Dhruv Kale" />
+          </div>
+          <div class="float-card float-award">
+            <span class="float-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="6" /><path d="M8.5 14 7 22l5-3 5 3-1.5-8" /></svg>
+            </span>
+            <span><strong>Customer Delight Award</strong><small>Capgemini</small></span>
+          </div>
+          <div class="float-card float-location">
+            <span class="float-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z" /><circle cx="12" cy="10" r="2.5" /></svg>
+            </span>
+            <span><strong>Kaiserslautern</strong><small>Work permit: Germany</small></span>
           </div>
         </div>
       </section>
 
-      <section class="value-band" aria-label="Recruiter fit">
-        <article>
-          <span>01</span>
-          <h2>Automates manual operations</h2>
-          <p>Built reporting and monitoring workflows that reduced repetitive work and gave support teams clearer signals.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h2>Connects AI to business tools</h2>
-          <p>Designs LangGraph and MCP-based systems for LLM orchestration across email, calendar, Teams, and HR tools.</p>
-        </article>
-        <article>
-          <span>03</span>
-          <h2>Translates data into decisions</h2>
-          <p>Creates Power BI, DAX, API, and Python pipelines that convert fragmented data into leadership-ready insight.</p>
-        </article>
-      </section>
+      <!-- Ticker -->
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span>Python</span><span>LLM agents</span><span>MCP</span><span>Playwright</span><span>LangGraph</span><span>Power BI</span><span>QLoRA</span><span>n8n</span><span>AppDynamics</span><span>Docker</span><span>PyTorch</span><span>SQL</span>
+          <span>Python</span><span>LLM agents</span><span>MCP</span><span>Playwright</span><span>LangGraph</span><span>Power BI</span><span>QLoRA</span><span>n8n</span><span>AppDynamics</span><span>Docker</span><span>PyTorch</span><span>SQL</span>
+        </div>
+      </div>
 
-      <section id="work" class="section split-section">
-        <div class="section-heading">
-          <p class="eyebrow">Experience</p>
-          <h2>Engineering work with measurable business outcomes.</h2>
+      <!-- About bento -->
+      <section id="about" class="section">
+        <div class="section-head reveal">
+          <span class="section-tag">About</span>
+          <h2>A bit about me, in tiles.</h2>
         </div>
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-meta">
-              <span>Flink</span>
-              <time>Mar 2025 - Present</time>
-            </div>
-            <div>
-              <h3>Deputy Shift Lead (Operations, Working Student)</h3>
-              <p>
-                Lead hub operations and a rider and ops team of up to 10 across shifts as long as 8 hours,
-                keeping an average daily order volume nearing 280 running smoothly.
-              </p>
-              <ul>
-                <li>Oversee inventory and stock management with a structured handover at the end of every shift.</li>
-                <li>Manage KPI tracking and pre- and post-order feedback, resolving rider issues in real time.</li>
-              </ul>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-meta">
-              <span>Capgemini</span>
-              <time>Apr 2023 - Sep 2024</time>
-            </div>
-            <div>
-              <h3>Senior Analyst / Software Engineer</h3>
-              <p>
-                Led the shift from manual weekly reporting to automated Power BI reports, earning a
-                Customer Delight Award and saving 4 hours per week in manual data compilation.
-              </p>
-              <ul>
-                <li>Integrated REST API data sources into Power BI reports using DAX.</li>
-                <li>Used LLMs to optimize DAX queries and improve reporting performance.</li>
-                <li>Managed workspace access, refreshes, ownership, and team enablement.</li>
-              </ul>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-meta">
-              <span>Capgemini</span>
-              <time>Sep 2021 - Mar 2023</time>
-            </div>
-            <div>
-              <h3>Analyst / Software Engineer</h3>
-              <p>
-                Built application monitoring, alerting, and automation for L2/L3 teams using
-                AppDynamics, Opsgenie, Python, and Ansible.
-              </p>
-              <ul>
-                <li>Created health, transaction, and infrastructure dashboards for multiple applications.</li>
-                <li>Automated AppDynamics dashboard generation, saving 2 hours of configuration effort.</li>
-                <li>Enabled .NET agent deployments and trained support teams on troubleshooting workflows.</li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </section>
 
-      <section id="projects" class="section">
-        <div class="section-heading compact">
-          <p class="eyebrow">Selected projects</p>
-          <h2>Proof that spans AI agents, automation, ML, and interactive systems.</h2>
-        </div>
-        <div class="project-grid">
-          <article class="project-card featured">
-            <div class="project-topline">
-              <span>AI Agents</span>
-              <small>LangGraph | MCP | Enterprise workflows</small>
-            </div>
-            <h3>Enterprise Agentic Mesh for Heterogeneous IT Systems</h3>
-            <p>
-              Engineering a hierarchical multi-agent system with a master agent coordinating specialized
-              sub-agents across Outlook Calendar, email, Microsoft Teams, and HR leave systems.
-            </p>
-            <ul>
-              <li>Custom MCP servers abstract corporate API complexity.</li>
-              <li>Bidirectional orchestration layer designed for secure backend communication.</li>
+        <div class="bento">
+          <article class="tile tile-now reveal">
+            <span class="tile-label">Right now</span>
+            <ul class="now-list">
+              <li>
+                <span class="now-dot dot-blue"></span>
+                <div><strong>M.Sc. Computer Science</strong><small>RPTU Kaiserslautern · 2024 – 2027</small></div>
+              </li>
+              <li>
+                <span class="now-dot dot-orange"></span>
+                <div><strong>Researching edge agentic AI</strong><small>Seminar survey · RPTU / DFKI</small></div>
+              </li>
+              <li>
+                <span class="now-dot dot-green"></span>
+                <div><strong>Building an LLM browser agent</strong><small>M.Sc. project · Playwright + MCP</small></div>
+              </li>
             </ul>
           </article>
 
-          <article class="project-card">
-            <div class="project-topline">
-              <span>Automation</span>
-              <small>n8n | LLMs | JavaScript</small>
-            </div>
-            <h3>Automated Job Application Tracking & State Pipeline</h3>
-            <p>
-              Built an n8n workflow that ingests unstructured emails, filters application updates,
-              and uses an LLM to classify statuses such as interview, offer, and rejection.
-            </p>
-            <a
-              href="https://github.com/dhruvkale17/Automated-Job-Application-Tracking-n8n-AI"
-              target="_blank"
-              rel="noreferrer"
-              data-track="project_click"
-              data-track-label="job_application_tracking_repo"
-            >View repository</a>
+          <article class="tile tile-journey reveal">
+            <span class="tile-label">The journey</span>
+            <svg class="journey-map" viewBox="0 0 320 150" role="img" aria-label="From Pune, India to Kaiserslautern, Germany">
+              <path class="journey-path" d="M40 115 C 110 10, 220 10, 280 50" />
+              <circle class="journey-pt" cx="40" cy="115" r="6" />
+              <circle class="journey-pt journey-pt-end" cx="280" cy="50" r="6" />
+              <circle class="journey-ring" cx="280" cy="50" r="13" />
+              <text x="40" y="140" text-anchor="middle">Pune</text>
+              <text x="306" y="80" text-anchor="end">Kaiserslautern</text>
+            </svg>
+            <p>4-year B.E. and 3 years at Capgemini in Pune, then an M.Sc. in Germany.</p>
           </article>
 
-          <article class="project-card">
-            <div class="project-topline">
-              <span>Machine Learning</span>
-              <small>Qwen2.5 | QLoRA | Translation</small>
-            </div>
-            <h3>LLM Fine-Tuning for Language Translation</h3>
-            <p>
-              Fine-tuned Qwen2.5-1.5B for German-to-French translation using QLoRA, with emphasis on
-              data cleaning, prompt design, and synthetic data generation.
-            </p>
-            <a
-              href="https://github.com/dhruvkale17/Fine-tuning-LLM-for-language-translation"
-              target="_blank"
-              rel="noreferrer"
-              data-track="project_click"
-              data-track-label="llm_translation_repo"
-            >View repository</a>
+          <article class="tile tile-stat reveal">
+            <span class="stat-num" data-count="6">6</span><span class="stat-unit">hrs/week</span>
+            <p>of manual reporting removed by automating Power BI at Capgemini</p>
           </article>
 
-          <article class="project-card">
-            <div class="project-topline">
-              <span>Mobile & AI</span>
-              <small>Android | Java | ML Kit</small>
-            </div>
-            <h3>MyDietTracker: AI-First Nutrition Tracking App</h3>
-            <p>
-              Building an AI-first meal and nutrition tracker with on-device nutrition-label OCR and
-              barcode scanning, a TDEE/calorie calculator, weight/macro tracking, and dynamic AI planning.
-            </p>
-            <a
-              href="https://github.com/dhruvkale17/MyDietTracker"
-              target="_blank"
-              rel="noreferrer"
-              data-track="project_click"
-              data-track-label="mydiettracker_repo"
-            >View repository</a>
+          <article class="tile tile-stat tile-stat-alt reveal">
+            <span class="stat-num"><span data-count="84">84</span>%</span>
+            <p>BLEU improvement from fine-tuning Qwen2.5 for German → French</p>
           </article>
 
-          <article class="project-card">
-            <div class="project-topline">
-              <span>AR &amp; Computer Vision</span>
-              <small>Android | ARCore | OpenGL ES</small>
+          <article class="tile tile-lang reveal">
+            <span class="tile-label">Languages</span>
+            <div class="lang-row">
+              <span>English</span><span class="lang-bar"><i style="--w: 100%"></i></span><b>C2</b>
             </div>
-            <h3>Depth Measure: ARCore Depth Camera &amp; Tape Measure</h3>
-            <p>
-              A tiny Android app that turns a single-camera phone into a live depth camera and tape
-              measure using ARCore's Depth API, rendering a real-time grayscale depth map with
-              confidence scoring via OpenGL ES.
-            </p>
-            <a
-              href="https://github.com/dhruvkale17/DepthMeasure"
-              target="_blank"
-              rel="noreferrer"
-              data-track="project_click"
-              data-track-label="depthmeasure_repo"
-            >View repository</a>
+            <div class="lang-row">
+              <span>German</span><span class="lang-bar"><i style="--w: 50%"></i></span><b>B1</b>
+            </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-topline">
-              <span>Interactive Systems</span>
-              <small>Unity | C# | Game loop</small>
+          <article class="tile tile-hobby reveal">
+            <span class="tile-label">Off the clock</span>
+            <div class="chips">
+              <span class="chip">Bouldering</span>
+              <span class="chip">Dance</span>
+              <span class="chip">Powerlifting</span>
+              <span class="chip">Arm wrestling</span>
             </div>
-            <h3>3D Obstacle Avoidance Game</h3>
-            <p>
-              Developed a complete Unity game with Rigidbody movement, collision detection, camera
-              tracking, score calculation, menus, win/loss states, and level transitions.
-            </p>
+          </article>
+
+          <article class="tile tile-edu reveal">
+            <span class="tile-label">Education</span>
+            <div class="edu-row">
+              <div><strong>M.Sc. Computer Science</strong><small>RPTU Kaiserslautern</small></div>
+              <time>2024 – 2027</time>
+            </div>
+            <div class="edu-row">
+              <div><strong>B.E. Computer Engineering</strong><small>University of Pune · Grade 1.9</small></div>
+              <time>2017 – 2021</time>
+            </div>
           </article>
         </div>
       </section>
 
-      <section id="skills" class="section skills-section">
-        <div class="section-heading">
-          <p class="eyebrow">Capabilities</p>
-          <h2>A practical stack for AI products, automation, and operational tooling.</h2>
+      <!-- Experience -->
+      <section id="experience" class="section">
+        <div class="section-head reveal">
+          <span class="section-tag">Experience</span>
+          <h2>Where I've put in the hours.</h2>
         </div>
-        <div class="skills-grid" aria-label="Skill groups">
-          <article>
-            <h3>AI & Data</h3>
-            <p>LangGraph, MCP, PyTorch, scikit-learn, QLoRA, NumPy, Pandas, LLM fine-tuning, prompt engineering, synthetic data.</p>
+
+        <ol class="timeline">
+          <li class="job reveal">
+            <div class="job-marker" aria-hidden="true"></div>
+            <div class="job-card">
+              <div class="job-top">
+                <div class="job-logo logo-cap" aria-hidden="true">C</div>
+                <div class="job-title">
+                  <h3>Senior Analyst / Software Engineer</h3>
+                  <p>Capgemini · Power BI Developer · Pune</p>
+                </div>
+                <span class="job-date">Apr 2023 – Sep 2024</span>
+              </div>
+              <ul>
+                <li>Pitched and led the move from manual to automated Power BI reporting across three weekly reports, which earned a Customer Delight Award.</li>
+                <li>Integrated data sources and built DAX reports for business decision-making; used LLMs to optimise queries for performance.</li>
+                <li>Managed workspace access, report ownership, and refreshes, and trained teammates on maintenance.</li>
+              </ul>
+              <div class="job-metrics">
+                <span><b>~6 hrs</b> saved / week</span>
+                <span><b>3</b> weekly reports automated</span>
+                <span class="metric-award">Customer Delight Award</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="job reveal">
+            <div class="job-marker" aria-hidden="true"></div>
+            <div class="job-card">
+              <div class="job-top">
+                <div class="job-logo logo-cap" aria-hidden="true">C</div>
+                <div class="job-title">
+                  <h3>Analyst / Software Engineer</h3>
+                  <p>Capgemini · Performance Engineering in Automation · Pune</p>
+                </div>
+                <span class="job-date">Sep 2021 – Mar 2023</span>
+              </div>
+              <ul>
+                <li>Wrote Python scripts that generate health status dashboards automatically, and automated AppDynamics .NET agent deployments with Python and Ansible.</li>
+                <li>Built client AppDynamics dashboards for application health and infrastructure, with health rules wired to Opsgenie alerts for L2/L3 on-call teams.</li>
+                <li>Ran training sessions so support teams could monitor and troubleshoot on their own.</li>
+              </ul>
+              <div class="job-metrics">
+                <span><b>2 hrs</b> saved / cycle</span>
+                <span><b>L2/L3</b> on-call support</span>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section">
+        <div class="section-head reveal">
+          <span class="section-tag">Projects</span>
+          <h2>Things I've built.</h2>
+        </div>
+
+        <div class="projects">
+          <!-- Featured: browser agent -->
+          <article class="project project-featured reveal">
+            <div class="project-art art-terminal" aria-hidden="true">
+              <div class="term-bar"><i></i><i></i><i></i><span>agent-run.log</span></div>
+              <pre><span class="t-dim">$</span> agent run --target leave-system
+<span class="t-ok">✓</span> 15 tools exposed over MCP
+<span class="t-ok">✓</span> page context: thousands → tens of tokens
+<span class="t-ok">✓</span> 25 / 25 correctness guarantees enforced
+<span class="t-ok">✓</span> 304 tests passing
+<span class="t-ok">✓</span> every action authenticated &amp; traced<span class="cursor"></span></pre>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span class="badge">M.Sc. project · 2026</span><span class="badge badge-soft">RPTU Kaiserslautern</span></div>
+              <h3>LLM Browser Agent for Enterprise Systems</h3>
+              <p>
+                An agent that operates a custom Leave Management System and an unmodified Nextcloud
+                Calendar purely through their web interfaces using Playwright, with 15 tools exposed over MCP.
+                Extracting typed values from test-id nodes cut context per call from thousands of markup
+                tokens to tens, and 25 correctness guarantees live in deterministic code at zero inference cost.
+              </p>
+              <div class="stack"><span>Python</span><span>Playwright</span><span>MCP</span><span>LLMs</span></div>
+            </div>
           </article>
-          <article>
-            <h3>Automation & Reporting</h3>
-            <p>Power BI, DAX, n8n, REST APIs, Excel, AppDynamics, Opsgenie, data reporting workflows.</p>
+
+          <!-- Translation -->
+          <article class="project reveal">
+            <div class="project-art art-bleu" aria-hidden="true">
+              <svg viewBox="0 0 320 160">
+                <text class="art-label" x="20" y="30">DE → FR · BLEU</text>
+                <text class="art-small" x="20" y="72">base</text>
+                <rect class="bar-muted" x="70" y="58" width="110" height="20" rx="4" />
+                <text class="art-small" x="20" y="112">QLoRA</text>
+                <rect class="bar-accent grow" x="70" y="98" width="202" height="20" rx="4" />
+                <text class="art-big" x="230" y="80">+84%</text>
+              </svg>
+            </div>
+            <div class="project-body">
+              <h3>LLM Fine-Tuning for Translation</h3>
+              <p>Fine-tuned Qwen2.5-1.5B for German → French with QLoRA. Data cleaning, prompt engineering, and synthetic data pushed BLEU up 84%.</p>
+              <div class="stack"><span>PyTorch</span><span>QLoRA</span><span>Qwen2.5</span></div>
+              <a
+                class="project-link"
+                href="https://github.com/dhruvkale17/Fine-tuning-LLM-for-language-translation"
+                target="_blank"
+                rel="noreferrer"
+                data-track="project_click"
+                data-track-label="llm_translation_repo"
+              >View on GitHub ↗</a>
+            </div>
           </article>
-          <article>
-            <h3>Software Engineering</h3>
-            <p>Python, SQL, Java, Flask, Django, Docker, Linux, Git, Jira, Ansible, backend services.</p>
+
+          <!-- n8n -->
+          <article class="project reveal">
+            <div class="project-art art-flow" aria-hidden="true">
+              <svg viewBox="0 0 320 160">
+                <path class="flow-line" d="M66 60 H124 M196 60 H254" />
+                <path class="flow-line flow-err" d="M160 80 V118 H226" />
+                <rect class="node" x="14" y="40" width="52" height="40" rx="10" />
+                <text class="node-txt" x="40" y="65" text-anchor="middle">Email</text>
+                <rect class="node node-accent" x="124" y="40" width="72" height="40" rx="10" />
+                <text class="node-txt node-txt-inv" x="160" y="65" text-anchor="middle">LLM</text>
+                <rect class="node" x="254" y="40" width="54" height="40" rx="10" />
+                <text class="node-txt" x="281" y="65" text-anchor="middle">Status</text>
+                <rect class="node node-warn" x="226" y="100" width="82" height="36" rx="10" />
+                <text class="node-txt" x="267" y="123" text-anchor="middle">Discord</text>
+                <text class="art-small" x="168" y="112">on error</text>
+              </svg>
+            </div>
+            <div class="project-body">
+              <h3>Job Application Tracking Pipeline</h3>
+              <p>An n8n workflow that reads unstructured emails, lets an LLM classify each application's status, and streams any errors to a Discord bot.</p>
+              <div class="stack"><span>n8n</span><span>LLMs</span><span>Discord</span></div>
+              <a
+                class="project-link"
+                href="https://github.com/dhruvkale17/Automated-Job-Application-Tracking-n8n-AI"
+                target="_blank"
+                rel="noreferrer"
+                data-track="project_click"
+                data-track-label="job_application_tracking_repo"
+              >View on GitHub ↗</a>
+            </div>
           </article>
-          <article>
-            <h3>Mobile & XR</h3>
-            <p>Android (Java), ARCore, OpenGL ES, on-device ML/OCR, barcode scanning.</p>
+
+          <!-- MyDietTracker -->
+          <article class="project reveal">
+            <div class="project-art art-diet" aria-hidden="true">
+              <svg viewBox="0 0 320 160">
+                <rect class="phone" x="116" y="12" width="88" height="148" rx="14" />
+                <circle class="ring-bg" cx="160" cy="70" r="28" />
+                <circle class="ring-fg" cx="160" cy="70" r="28" />
+                <text class="node-txt" x="160" y="74" text-anchor="middle">kcal</text>
+                <rect class="bar-muted" x="132" y="112" width="56" height="6" rx="3" />
+                <rect class="bar-accent" x="132" y="112" width="40" height="6" rx="3" />
+                <rect class="bar-muted" x="132" y="124" width="56" height="6" rx="3" />
+                <rect class="bar-orange" x="132" y="124" width="28" height="6" rx="3" />
+                <rect class="bar-muted" x="132" y="136" width="56" height="6" rx="3" />
+                <rect class="bar-green" x="132" y="136" width="46" height="6" rx="3" />
+                <g class="barcode"><rect x="232" y="56" width="3" height="40" /><rect x="238" y="56" width="1.5" height="40" /><rect x="242" y="56" width="4" height="40" /><rect x="249" y="56" width="1.5" height="40" /><rect x="253" y="56" width="3" height="40" /><rect x="259" y="56" width="1.5" height="40" /><rect x="263" y="56" width="4" height="40" /><rect x="270" y="56" width="2" height="40" /></g>
+                <path class="scan-line" d="M226 76 H278" />
+              </svg>
+            </div>
+            <div class="project-body">
+              <h3>MyDietTracker</h3>
+              <p>An AI-first nutrition app with on-device nutrition-label OCR and barcode scanning, a TDEE calculator, weight and macro tracking, and AI meal planning.</p>
+              <div class="stack"><span>Android</span><span>Java</span><span>ML Kit</span></div>
+              <a
+                class="project-link"
+                href="https://github.com/dhruvkale17/MyDietTracker"
+                target="_blank"
+                rel="noreferrer"
+                data-track="project_click"
+                data-track-label="mydiettracker_repo"
+              >View on GitHub ↗</a>
+            </div>
           </article>
-          <article>
-            <h3>Research & 3D</h3>
-            <p>Computer vision, 3D Gaussian Splatting, SceneScript, VIBA, Unity, C# interactive systems.</p>
+
+          <!-- DepthMeasure -->
+          <article class="project reveal">
+            <div class="project-art art-depth" aria-hidden="true">
+              <svg viewBox="0 0 320 160">
+                <defs>
+                  <radialGradient id="depthGrad" cx="40%" cy="55%" r="70%">
+                    <stop offset="0" stop-color="#f2f2f2" />
+                    <stop offset="0.45" stop-color="#8a8a8a" />
+                    <stop offset="1" stop-color="#1a1a1a" />
+                  </radialGradient>
+                </defs>
+                <rect x="20" y="16" width="280" height="128" rx="12" fill="url(#depthGrad)" />
+                <path class="tape" d="M60 120 L250 50" />
+                <circle class="tape-end" cx="60" cy="120" r="5" />
+                <circle class="tape-end" cx="250" cy="50" r="5" />
+                <path class="crosshair" d="M150 74 v12 M144 80 h12" />
+              </svg>
+            </div>
+            <div class="project-body">
+              <h3>Depth Measure</h3>
+              <p>Turns a single-camera Android phone into a live depth camera and tape measure with ARCore's Depth API, rendering a real-time depth map with confidence scoring.</p>
+              <div class="stack"><span>ARCore</span><span>OpenGL ES</span><span>Android</span></div>
+              <a
+                class="project-link"
+                href="https://github.com/dhruvkale17/DepthMeasure"
+                target="_blank"
+                rel="noreferrer"
+                data-track="project_click"
+                data-track-label="depthmeasure_repo"
+              >View on GitHub ↗</a>
+            </div>
+          </article>
+
+          <!-- Unity -->
+          <article class="project project-wide reveal">
+            <div class="project-art art-game" aria-hidden="true">
+              <svg viewBox="0 0 320 160">
+                <path class="lane" d="M120 150 L150 20 H170 L200 150 Z" />
+                <path class="lane-mid" d="M160 150 V24" />
+                <rect class="obstacle" x="146" y="44" width="14" height="10" rx="2" />
+                <rect class="obstacle" x="164" y="74" width="18" height="13" rx="2" />
+                <rect class="obstacle" x="134" y="100" width="22" height="16" rx="2" />
+                <circle class="player" cx="174" cy="132" r="9" />
+              </svg>
+            </div>
+            <div class="project-body">
+              <h3>3D Obstacle Avoidance Game</h3>
+              <p>A complete Unity game with physics-based movement, collision detection, camera tracking, scoring, menus, and level transitions.</p>
+              <div class="stack"><span>Unity</span><span>C#</span></div>
+            </div>
           </article>
         </div>
       </section>
 
-      <section class="section education-section">
-        <div class="education-panel">
-          <div>
-            <p class="eyebrow">Education</p>
-            <h2>Computer Science foundation, industry delivery mindset.</h2>
+      <!-- Research -->
+      <section id="research" class="section">
+        <div class="section-head reveal">
+          <span class="section-tag">Research</span>
+          <h2>Seminar surveys at RPTU &amp; DFKI.</h2>
+        </div>
+
+        <div class="research">
+          <article class="paper reveal">
+            <div class="paper-art" aria-hidden="true">
+              <svg viewBox="0 0 120 120">
+                <rect class="chip-body" x="30" y="30" width="60" height="60" rx="10" />
+                <path class="chip-pins" d="M42 30 V18 M60 30 V18 M78 30 V18 M42 90 V102 M60 90 V102 M78 90 V102 M30 42 H18 M30 60 H18 M30 78 H18 M90 42 H102 M90 60 H102 M90 78 H102" />
+                <circle class="chip-core" cx="60" cy="60" r="12" />
+              </svg>
+            </div>
+            <div>
+              <span class="paper-term">Summer 2026</span>
+              <h3>Edge Agentic Intelligence</h3>
+              <p>Architecture, memory, protocols, and trust for running tool-using LLM agents on edge hardware: KV-cache and unified-memory limits, compaction vs. reasoning stability, MCP and A2A, and confidential computing.</p>
+            </div>
+          </article>
+
+          <article class="paper reveal">
+            <div class="paper-art" aria-hidden="true">
+              <svg viewBox="0 0 120 120">
+                <g class="splats">
+                  <circle cx="34" cy="70" r="9" /><circle cx="50" cy="52" r="12" /><circle cx="70" cy="44" r="8" />
+                  <circle cx="84" cy="62" r="11" /><circle cx="62" cy="74" r="14" /><circle cx="40" cy="88" r="7" />
+                  <circle cx="80" cy="86" r="8" /><circle cx="96" cy="44" r="5" /><circle cx="26" cy="50" r="5" />
+                  <circle cx="60" cy="28" r="5" />
+                </g>
+                <path class="glasses" d="M22 104 h28 M70 104 h28 M50 104 q10 -6 20 0" />
+              </svg>
+            </div>
+            <div>
+              <span class="paper-term">Winter 2025/26</span>
+              <h3>World Creation from Egocentric Devices</h3>
+              <p>Real-time 3D scene reconstruction from smart-glasses data: 3D Gaussian Splatting, Visual-Inertial Bundle Adjustment, and SceneScript with human-in-the-loop correction.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <div class="section-head reveal">
+          <span class="section-tag">Skills</span>
+          <h2>The toolbox.</h2>
+        </div>
+
+        <div class="skills">
+          <div class="skill-group reveal">
+            <h3>Programming</h3>
+            <div class="stack stack-lg"><span>Python</span><span>SQL</span><span>Java (Core)</span></div>
           </div>
-          <div class="education-list">
-            <article>
-              <h3>M.Sc. Computer Science</h3>
-              <p>RPTU Kaiserslautern-Landau | 2024 - 2027</p>
-            </article>
-            <article>
-              <h3>B.E. Computer Engineering</h3>
-              <p>University of Pune | Final grade: 1.9</p>
-            </article>
+          <div class="skill-group reveal">
+            <h3>AI &amp; LLM</h3>
+            <div class="stack stack-lg"><span>Agentic AI</span><span>LangGraph</span><span>MCP</span><span>QLoRA fine-tuning</span><span>PyTorch</span></div>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Engineering &amp; Tooling</h3>
+            <div class="stack stack-lg"><span>Playwright</span><span>Docker</span><span>n8n</span><span>Git</span><span>Jira</span></div>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Enterprise Data</h3>
+            <div class="stack stack-lg"><span>Power BI</span><span>AppDynamics</span><span>Flask</span></div>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="contact-section">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Recruiting for a role where AI meets real operational problems?</h2>
-          <p>
-            I can help build agentic workflows, automation pipelines, backend services, reporting systems,
-            and tooling that teams can actually operate.
-          </p>
-        </div>
+      <!-- Contact -->
+      <section id="contact" class="contact reveal">
+        <div class="contact-glow" aria-hidden="true"></div>
+        <span class="section-tag section-tag-inv">Contact</span>
+        <h2>Let's work together.</h2>
+        <p>Hiring for a working student, internship, or full-time role in software, AI, or data automation? I'd love to hear about it.</p>
         <div class="contact-actions">
           <a
-            class="button primary"
-            href="mailto:dhruvkofficial@gmail.com"
+            class="btn btn-light"
+            href="mailto:dhruvk0074@gmail.com"
             data-track="email_click"
             data-track-label="contact_email"
-          >dhruvkofficial@gmail.com</a>
+          >dhruvk0074@gmail.com</a>
+          <button class="btn btn-outline-light copy-email" type="button" data-email="dhruvk0074@gmail.com">Copy email</button>
+        </div>
+        <div class="contact-links">
           <a
-            class="button secondary"
+            href="https://www.linkedin.com/in/dhruv-kale99/"
+            target="_blank"
+            rel="noreferrer"
+            data-track="linkedin_click"
+            data-track-label="contact_linkedin"
+          >LinkedIn ↗</a>
+          <a
+            href="https://github.com/dhruvkale17"
+            target="_blank"
+            rel="noreferrer"
+            data-track="github_click"
+            data-track-label="contact_github"
+          >GitHub ↗</a>
+          <a
             href="./assets/Dhruv_Kale_Software_Engineer_CV.pdf"
             download
             data-track="resume_download"
             data-track-label="contact_resume"
-          >Download CV</a>
+          >Resume (PDF) ↓</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <span>Dhruv Kale</span>
-      <span>AI | Automation | Software Engineering</span>
+      <span>© <span class="year">2026</span> Dhruv Kale</span>
+      <span>Kaiserslautern, Germany</span>
     </footer>
 
     <script src="./script.js"></script>
